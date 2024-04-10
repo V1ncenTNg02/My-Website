@@ -1,0 +1,14 @@
+#midTitle{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading{
+  z-index:50;
+}
+
+.subtitle{
+  z-index:50;
+  padding-bottom:3%;
+}

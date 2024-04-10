@@ -1,0 +1,66 @@
+#homePage {
+  width: 100%;
+  height: 100vh;
+  background-color: #fcfaf0;
+}
+
+#projectPage {
+  width: 100%;
+  height: fix;
+  background-color: #fcfaf0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#contactPage {
+  height: 100vh;
+  width: 100%;
+  align-items:center;
+  background-color: #fcfaf0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#bg-1 {
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: 10%;
+  width: 30%;
+  height: 90%;
+  background-color: #99b0b0;
+}
+
+.projectCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit;
+  width: 100%;
+}
+
+.projectContainer {
+  height: fit;
+  width: fit;
+  z-index: 50;
+  margin: 3% 0;
+}
+
+.envelopeWrapper {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  margin-top: 250px;
+}
+
+
+.sendButton{
+    position:relative;
+    left:calc(50% - 75px);
+    top:5%;
+}

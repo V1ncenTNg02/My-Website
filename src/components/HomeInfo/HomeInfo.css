@@ -1,0 +1,41 @@
+.HomeInfo {
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: auto;
+  position: absolute;
+  left: calc(25% + 350px);
+  top: 25%;
+  align-items: center;
+}
+
+.description {
+  font-size: 20px;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  aling-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 7% 0;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid;
+  box-shadow: 0 2px 5px grey;
+}
+
+button:hover {
+  scale:1.05;
+  transition:0.15s;
+}
+
+.resume {
+  background-color: #b5b2b0;
+}
