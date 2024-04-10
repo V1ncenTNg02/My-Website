@@ -41,11 +41,11 @@ export const webConfig = {
 
 export const projectInfo= [
     {
-    projectName: "Web3 IDO Platform", 
+    projectName: "Next IDO", 
     role:"Frontend Developer",
-    projectDesc: "A website for web3 game investment",
-    githubLink:"",
-    deployedLink:""
+    projectDesc: "An IDO platform for web3 game investment",
+    githubLink:"https://github.com/V1ncenTNg02/next-ido",
+    deployedLink:"https://next-ido.vercel.app/en/"
     },
     {
     projectName: "Fyto iOS App", 
@@ -58,7 +58,7 @@ export const projectInfo= [
     projectName: "Vis-CAT Website Game", 
     role:"Frontend Developer",
     projectDesc: "Website based game for visual disability detection",
-    githubLink:"",
-    deployedLink:""
+    githubLink:"https://github.com/V1ncenTNg02/Vis-CAT-99",
+    deployedLink:"https://deploy.d3ltskl8ryle97.amplifyapp.com/Lobby"
     }
   ]

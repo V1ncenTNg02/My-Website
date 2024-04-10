@@ -3,8 +3,10 @@ import './ProjectCard.css'
 
 
 export default function ProjectCard( project ) {
-  console.log('ProjectCard props:', project);
   const { projectName, role, projectDesc, githubLink, deployedLink } = project.project;
+  const handleClick = (item) => {
+    window.location.href = item.deployedLink;
+  }
   return (
     <div className='ProjectCard'>
       <div className='infoSection'>
@@ -13,10 +15,9 @@ export default function ProjectCard( project ) {
         <p id = "projectDescription">{projectDesc}</p>
         <div className='bottomSection'>
           <div className='projectLinks'>
-            <div className='githubLink'>Github: {githubLink}</div>
-            <div className='deployedVersion'>Deployed:{deployedLink}</div>
+            <a className='externalLink' href={githubLink}>Github </a>
           </div>
-          <button className='exploreBtn'>Explore</button>
+          <button className='exploreBtn' onClick = {()=>handleClick({deployedLink})}>Explore</button>
         </div>
       </div>
       <div className='imageSection'></div>
