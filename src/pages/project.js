@@ -15,7 +15,7 @@ export default function project() {
       <div className = "projectCards">
         {projectInfo.map((project, index) => {
           return(
-            <div className = "projectContainer">
+            <div className = "projectContainer" key = {index}>
               <ProjectCard project = {project}/>
             </div>
           )

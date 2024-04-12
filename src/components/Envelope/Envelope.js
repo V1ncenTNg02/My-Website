@@ -9,42 +9,41 @@ export default function Envelope({animate}) {
   const [senderName, setSenderName] = useState('');
   const [senderEmail, setSenderEmail] = useState('');
   const [letterTitle, setLetterTitle] = useState('');
-  const [letterContent, setLetterContent] = useState('');
-
-  const sendEmail = () => {
-    console.log(senderEmail, letterContent, letterTitle);
-
-    emailjs.send(
-      emailConfig.serviceID,
-      emailConfig.templateID,
-      {
-        to:'wuyinghong0323@gmail.com',
-        senderName:senderName,
-        subject:letterTitle,
-        message:letterContent,
-        senderEmail:senderEmail
-      },
-      emailConfig.userID
-    )
-    .then((response) => {
-      console.log('Email sent successfully:', response);
-    })
-    .catch((error) => {
-      console.error('Email sending failed:', error);
-    });
-  }
-
-  const handleFormSubmit = () => {
-    console.log("Form Submission triggered");
-    sendEmail();
-  };
+  const [letterContent, setLetterContent] = useState(''); 
 
   useEffect(() => {
+    const sendEmail = () => {
+      console.log(senderEmail, letterContent, letterTitle);
+  
+      emailjs.send(
+        emailConfig.serviceID,
+        emailConfig.templateID,
+        {
+          to:'wuyinghong0323@gmail.com',
+          senderName:senderName,
+          subject:letterTitle,
+          message:letterContent,
+          senderEmail:senderEmail
+        },
+        emailConfig.userID
+      )
+      .then((response) => {
+        console.log('Email sent successfully:', response);
+      })
+      .catch((error) => {
+        console.error('Email sending failed:', error);
+      });
+    }
+
+    const handleFormSubmit = () => {
+      sendEmail();
+    };
+
     if (animate) {
       setIsAnimated(true);
       handleFormSubmit();
     }
-  }, [animate]);
+  }, [animate, letterContent, letterTitle, senderEmail, senderName]);
 
   return (
     <div className={`envelopeContainer ${isAnimated && animate ? 'animate' : ''}`}>

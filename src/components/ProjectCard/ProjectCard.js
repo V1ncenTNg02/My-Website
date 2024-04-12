@@ -8,7 +8,6 @@ export default function ProjectCard( project ) {
   const handleClick = (item) => {
     window.location.href = item.deployedLink;
   }
-  console.log(img);
   return (
     <div className='ProjectCard'>
       <div className='infoSection'>
