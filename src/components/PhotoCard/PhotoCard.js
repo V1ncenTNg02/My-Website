@@ -3,8 +3,6 @@ import "./PhotoCard.css"
 import {LuLinkedin, LuInstagram, LuMail} from "react-icons/lu";
 
 export default function PhotoCard({config}) {
-  const socials = config.socials
-
   return (
     <div className='photoCard'>
       <div className = 'photoContainer'>
