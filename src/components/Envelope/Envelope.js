@@ -42,8 +42,7 @@ export default function Envelope({animate}) {
   useEffect(() => {
     if (animate) {
       setIsAnimated(true);
-      // handleFormSubmit();
-      console.log("Animation triggered");
+      handleFormSubmit();
     }
   }, [animate]);
 

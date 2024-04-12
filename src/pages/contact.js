@@ -5,9 +5,20 @@ import {webConfig} from '../configs/webContentConfig'
 
 export default function Contact() {
   const [animateEnvelope, setAnimateEnvelope] = useState(false);
+  const [btnMsg,setBtnMsg] = useState('Send');
+  const sent = sessionStorage.getItem('messageSent');
 
   const handleSendMessage = () => {
-    setAnimateEnvelope(true);
+    if(sent !== 'true'){
+      setAnimateEnvelope(true);
+      sessionStorage.setItem('messageSent', 'true');
+      setTimeout(() => {
+        setBtnMsg('Letter Sent!');
+      }, 4000);
+    }
+    else{
+      setBtnMsg('Letter Already Sent!');
+    }
   };
 
 
@@ -17,8 +28,7 @@ export default function Contact() {
       <div className='envelopeWrapper'>
         <Envelope animate={animateEnvelope}/>
       </div>
-      <button className="sendButton" onClick={handleSendMessage}>Send</button>
-      
+      <button className="sendButton" onClick={handleSendMessage}>{btnMsg}</button>
     </div>
   )
 }

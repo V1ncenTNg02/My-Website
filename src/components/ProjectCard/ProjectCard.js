@@ -2,11 +2,13 @@ import React from 'react'
 import './ProjectCard.css'
 
 
+
 export default function ProjectCard( project ) {
-  const { projectName, role, projectDesc, githubLink, deployedLink } = project.project;
+  const { projectName, role, projectDesc, githubLink, deployedLink, img } = project.project;
   const handleClick = (item) => {
     window.location.href = item.deployedLink;
   }
+  console.log(img);
   return (
     <div className='ProjectCard'>
       <div className='infoSection'>
@@ -20,7 +22,7 @@ export default function ProjectCard( project ) {
           <button className='exploreBtn' onClick = {()=>handleClick({deployedLink})}>Explore</button>
         </div>
       </div>
-      <div className='imageSection'></div>
+      <div className='imageSection'><img src = {img} alt = {projectName} className='projectImgs'></img></div>
     </div>
   )
 }

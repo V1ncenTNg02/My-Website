@@ -3,8 +3,7 @@
   width:70%;
   max-width: 700px;
   min-width:600px;
-  min-height:300px;
-  height: fit;
+  height:300px;
   display: flex;
   flex-direction: row;
   border: 1px solid;
@@ -58,4 +57,16 @@
   border-radius: 0 20px 20px 0;
   height:auto;
   background-color:#B9B7Bd;
+}
+
+.projectImgs{
+  height:100%;
+  width:100%;
+  object-fit:cover;
+  border-radius: 0 20px 20px 0;
+}
+
+.projectImgs:hover{
+  scale:110%;
+  transition:0.25s;
 }

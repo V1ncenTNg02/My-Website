@@ -9,11 +9,17 @@ import './pages.css'
 export default function Home() {
 
   return (
-    <div id='homePage'>
-      <div id = "bg-1"></div>
-      <NavBar config={webConfig.nav}/>
-      <PhotoCard config={webConfig.photoCard}/>
-      <HomeInfo/>
-    </div>
+    <>
+      <div id='homePage'>
+        <div id = "bg-1"></div>
+        <NavBar config={webConfig.nav}/>
+        <PhotoCard config={webConfig.photoCard}/>
+        <HomeInfo/>
+      </div>
+      <div id = "errorPage">
+        Woosh! Please use laptop to enable all functionalities.
+      </div>
+    </>
+    
   )
 }

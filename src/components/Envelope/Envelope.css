@@ -31,7 +31,6 @@
   transition: transform 0.25s linear;
 }
 
-/* Lid when closed */
 .lid.one {
   border-top: 20vh solid #658ced;
   transform: rotateX(0deg);
@@ -40,7 +39,6 @@
   transform: rotateX(90deg);
 }
 
-/* Lid when opened */
 .lid.two {
   border-top: 20vh solid #3760C9;
   transform: rotateX(90deg);

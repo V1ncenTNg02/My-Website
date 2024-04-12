@@ -3,6 +3,9 @@ import Photo from "../assets/Vincent/myPhoto.jpg"
 import LinkedIn from '../assets/socialIcons/linkedIn.svg'
 import Instagram from '../assets/socialIcons/ins.svg'
 import Email from '../assets/socialIcons/email.svg'
+import NextIDO from '../assets/projects/Next-IDO.png'
+import Fyto from '../assets/projects/Fyto.png'
+import VisCAT from '../assets/projects/Vis-CAT.png'
 
 export const webConfig = {
     "nav":{
@@ -35,7 +38,7 @@ export const webConfig = {
         url1: '/Resume.pdf',
         link2: 'Projects',
         url2: '/project',
-        text: 'Hi! This is Yingwang, an enthusiastic developer, a food lover and excellent chef at home, an unprofessional photographer, and a reader.',
+        text: 'Hi! This is Yingwang, an enthusiastic developer, a food lover and excellent chef at home, an unprofessional photographer, and a reader. Feel free to navigate my website. This website is under continuous development and some amazing functions are coming out soon.',
       }
 }
 
@@ -45,20 +48,23 @@ export const projectInfo= [
     role:"Frontend Developer",
     projectDesc: "An IDO platform for web3 game investment",
     githubLink:"https://github.com/V1ncenTNg02/next-ido",
-    deployedLink:"https://next-ido.vercel.app/en/"
+    deployedLink:"https://next-ido.vercel.app/en/",
+    img:NextIDO
     },
     {
     projectName: "Fyto iOS App", 
     role:"Full-stack Developer",
     projectDesc: "An iOS app for wildfire tracking and devices control",
     githubLink:"",
-    deployedLink:""
+    deployedLink:"",
+    img:Fyto
     },
     {
     projectName: "Vis-CAT Website Game", 
     role:"Frontend Developer",
     projectDesc: "Website based game for visual disability detection",
     githubLink:"https://github.com/V1ncenTNg02/Vis-CAT-99",
-    deployedLink:"https://deploy.d3ltskl8ryle97.amplifyapp.com/Lobby"
+    deployedLink:"https://deploy.d3ltskl8ryle97.amplifyapp.com/Lobby",
+    img:VisCAT
     }
   ]

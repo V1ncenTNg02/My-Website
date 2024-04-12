@@ -73,12 +73,12 @@ Task to do:
 
 General:
 6. Get a design for medium and small screen
-7. Fill in the information in my website
+7. Fill in the information in my website 
 
 Home Page:
-1. Adjust the style of name card
 
 Project Page:
+1. Fill in the project card
 
 Contact Page:
 1. Add a finish page
