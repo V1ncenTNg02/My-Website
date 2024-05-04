@@ -1,7 +1,7 @@
 # My personal website!
 
 ## Something to say...
-This is the first version of my personal website. I want to showcase some interesting projects that I have done, some interesting visual effects, and something you don't know about me! Also, this is a place where I do experiments of interesting and cool visual effects, functionalities, and new design. Feel free to check it out! New elements are under development, coming soon!
+This is the first version of my personal website. I want to showcase some interesting projects that I have done, some interesting visual effects, and something you don't know about me! Also, this is a place where I do experiments of interesting and cool visual effects, functionalities, and new design. :point_right: [click here](https://wonderful-moss-0578c3610.5.azurestaticapps.net) Feel free to check it out! New elements are under development, coming soon!
 
 ## Tech Stack
 ### Frontend:
